@@ -13,9 +13,9 @@ class List extends React.PureComponent{
     }
 
     getList = () => {
-        fetch('/api/getList').
-        then(res => res.json()).
-        then(list => this.setState({list}))
+        fetch('/api/getList')
+        .then(res => res.json())
+        .then(list => this.setState({list}))
     }
 
     render() {

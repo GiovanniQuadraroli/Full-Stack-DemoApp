@@ -1,5 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Calendar from '../components/Calendar'
+
+import '../App.css'
 
 class Home extends React.PureComponent{
     render() {
@@ -11,6 +14,9 @@ class Home extends React.PureComponent{
                         My List
                     </button>
                 </Link>
+                <main>
+                    <Calendar />
+                </main>
             </div>
         )
     }
